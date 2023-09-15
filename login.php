@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $row['password'])) {
             // Password is correct, allow access
             echo "Login successful!";
-            // You can set session variables or redirect the user to their dashboard here
+            // can set session variables or redirect the user to their dashboard here
         } else {
             echo "Invalid password.";
         }
